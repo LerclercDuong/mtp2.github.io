@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-content">
+            <button class="play-list">
+          Playlist
+          <i class="fas fa-list"></i>
+        </button>
+            <section class="music-content-box">
+                <div class="thumbnail-song">
+                    <img id="thump" src="data:image/jpeg;base64,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"
+                        alt="" />
+                </div>
+                <div class="content-wrapper">
+                    <div class="info-song">
+                        <p class="song-name">Chúng ta của hiện tại</p>
+                        <p class="author">Sơn Tùng M-TP</p>
+                    </div>
+                </div>
+            </section>
+            <audio id="audio" src="" preload="metadata"></audio>
+            <div class="bar-song">
+                <span class="current-time">00:00</span>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <span class="duration-time">03:00</span>
+            </div>
+            <div class="song-footer">
+                <button class="back">
+            <i class="fas fa-step-backward"></i>
+          </button>
+                <button class="play-song">
+            <i class="fas fa-play "></i>
+            <i class="fas fa-pause on "></i>
+          </button>
+                <button class="forward">
+            <i class="fas fa-step-forward"></i>
+          </button>
+            </div>
+        </div>
+        <div class="playlist-box">
+            <div class="header">
+                <button class="button go-home">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+                <div class="text">
+                    <p>Playlist</p>
+                </div>
+            </div>
+            <div class="list-song"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

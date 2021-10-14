@@ -138,12 +138,12 @@ preSong.onclick = function() {
     }
 }
 nextSong.onclick = function() {
-    if (currentIndex >= musicList.length - 1) {
+    currentIndex++
+    if (currentIndex >= musicList.length) {
         currentIndex = 0
 
-    } else {
-        next()
     }
+    loadSong()
 
 }
 audio.onended = function() {
@@ -162,3 +162,4 @@ function dura() {
         console.log(audio.duration)
     }
 }
+loadSong()
